@@ -1,0 +1,127 @@
+.edit_icon {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.edit_icon img {
+  border: 7px solid #f8f3ea;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+
+.applicant_name {
+  text-align: left;
+}
+
+#viewIcon:hover {
+  /* background: #000000; */
+  padding: 1px;
+}
+#editIcon:hover {
+  padding: 1px;
+}
+
+/* --Responsive-- */
+@media (max-width: 768px) {
+  #image_upload_icon {
+    align-content: end;
+    margin-bottom: 30px;
+  }
+  .card {
+    /* height: 677px;
+    width: 390px; */
+    height: 90vh;
+    /* height: 90vh; */
+    height: 96vh;
+    width: 70vw;
+    max-width: 350px;
+    min-width: 300px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  border: 1px solid #ccc;
+}
+input[type="text"]:focus {
+  /* input[type="text"]:focus {
+  outline: none;
+}
+input[type="text"]:hover {
+} */
+  /* input[type="text"]:hover {
+  border: 1px solid #000000;
+}
+} */
+  .textarea-div {
+    width: -webkit-fill-available;
+    display: flex;
+    /* display: flex; */
+  }
+  .custom-textarea {
+    font-family: inherit;
+    scrollbar-width: none;
+  }
+
+  .custom-textarea:hover {
+    /* .custom-textarea:hover {
+  border: 1px solid #000000;
+}
+} */
+
+    .custom-textarea:focus {
+      border: 1px solid #4a90e2;
+      transform: rotateY(180deg);
+      /* backface-visibility: hidden; */
+    }
+    .box_container {
+      display: flex;
+      justify-content: center;
+    }
+    #image_upload_icon {
+      align-content: end;
+    }
+    #image_upload_icon img {
+      padding: 7px;
+      width: 36px;
+      border: 1px solid #f8f3ea;
+      border-radius: 50%;
+      background: #0b1957;
+      position: relative;
+      margin-left: -36px;
+      cursor: pointer;
+    }
+    #image_upload_icon img:hover {
+      background-color: #030719;
+      padding: 8px;
+      transform: 0.3s;
+      translate: 1.2x;
+    }
+    span {
+      font-size: 10px;
+      color: #ffbebe;
+      margin-left: 10px;
+    }
+
+    /* -----css form validation----- */
+    input:invalid,
+    textarea:invalid {
+      border: 2px solid red;
+      background-color: #ffe6e6;
+    }
+    input:focus:invalid,
+    textarea:focus:invalid {
+      outline: none;
+      box-shadow: 0 0 5px red;
+    }
+
+    .input_field:has(input:invalid)::after {
+      /* content: "This field is required"; */
+      color: red;
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+}

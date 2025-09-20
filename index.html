@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Flip Container -->
+    <div class="card-flip-container">
+      <div class="card-flipper">
+        <!-- view -->
+
+        <div class="card">
+          <div id="editIcon" class="edit_icon">
+            <img src="assets/pen.png" alt="Edit icon" />
+          <div class="edit_icon">
+            <img id="editIcon" src="assets/pen.png" alt="Edit icon" />
+          </div>
+          <div class="content">
+            <div class="box1">
+              <div class="box_container">
+                <div class="box1_image">
+                  <img class="profile"
+                    src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                    alt="Profile Image" />
+                  <img class="profile" id="prof_image" alt="Profile Image" />
+                </div>
+              </div>
+              <div class="applicant_name">Aarav Mehta</div>
+              <div class="applicant_name"></div>
+            </div>
+            <div class="box2">
+              <div class="description">
+                <div class="role">
+                  <div>
+                    <img src="assets/role.png" alt="Role icon" />
+                  </div>
+                  <div>
+                    <p>Frontend Engineer</p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="role">
+                  <div>
+                    <img src="assets/mail.png" alt="Mail icon" />
+                  </div>
+                  <div>
+                    <p>aarav.mehta@exmple.com</p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="role">
+                  <div class="userbio_icon">
+                    <img src="assets/userbio.png" alt="User bio icon" />
+                  </div>
+                  <div>
+                    <p>"Learning frontend development with focus on HTML, CSS, and React."</p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="role">
+                  <div>
+                    <img src="assets/location.png" alt="Location icon" />
+                  </div>
+                  <div>
+                    <p>Bangalore, India</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- edit -->
+        <div class="card card_edit">
+          <div id="viewIcon" class="edit_icon">
+            <img src="assets/save.png" alt="Edit icon" />
+          </div>
+          <div class="content">
+            <div class="box1">
+              <div class="box_container">
+                <div class="box1_image">
+                  <img class="profile"
+                    src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                    alt="Profile Image" />
+                </div>
+              </div>
+          <form id="profileForm" novalidate>
+
+              <div class="role profile_name">
+                <div>
+                  <img src="assets/username.png" alt="Role icon" />
+                </div>
+                <div class="input_field">
+                  <input type="text" value="Aarav Mehta" />
+                </div>
+              </div>
+            <div class="edit_icon">
+              <img id="viewIcon" type="submit" src="assets/save.png" alt="Edit icon" />
+              <input type="file" id="image_input" accept="image/*" style="display: none;" />
+            </div>
+            <div class="box2">
+              <div class="description edit_description">
+                <div class="role">
+                  <div>
+                    <img src="assets/role.png" alt="Role icon" />
+            <div class="content">
+              <div class="box1">
+                <div class="box_container">
+                  <div class="box1_image">
+                    <div class="arc_circle">
+                      <img src="" id="prof_image_edit" class="profile" />
+                    </div>
+                  </div>
+                  <div class="input_field">
+                    <input type="text" value="Frontend Engineer" />
+                  <div id="image_upload_icon">
+                    <img src="assets/delete.png" alt="">
+                  </div>
+                </div>
+                <div class="role">
+
+                <div class="role profile_name">
+                  <div>
+                    <img src="assets/mail.png" alt="Mail icon" />
+                    <img src="assets/username.png" alt="Role icon" />
+                  </div>
+                  <div class="input_field">
+                    <input type="text" value="aarav.mehta@exmple.com" />
+
+                    <input required id="name_input" type="text" value="Aarav Mehta" required minlength="2"
+                      name="username" />
+                    <span id="nameError" class="error"></span>
+                  </div>
+                </div>
+                <div class="role">
+                  <div class="userbio_icon">
+                    <img src="assets/userbio.png" alt="User bio icon" />
+                  </div>
+                  <div class="textarea-div">
+                    <textarea id="autoTextarea" class="custom-textarea" type="text" cols="30"
+                      value="Learning frontend development with focus on HTML, CSS, and React.">Learning frontend development with focus on HTML, CSS, and React.
+</textarea>
+                  </div>
+                </div>
+                <div class="role">
+                  <div>
+                    <img src="assets/location.png" alt="Location icon" />
+                  </div>
+                  <div class="input_field">
+                    <input type="text" value="Bangalore, India" />
+              </div>
+              <div class="box2">
+                <div class="description edit_description">
+                  <div class="role">
+                    <div>
+                      <img src="assets/role.png" alt="Role icon" />
+                    </div>
+                    <div class="input_field">
+                      <input id="role_input" type="text" value="Frontend Engineer" required minlength="2" name="role" />
+                      <span id="roleError" class="error"></span>
+                    </div>
+                  </div>
+                  <div class="role">
+                    <div>
+                      <img src="assets/mail.png" alt="Mail icon" />
+                    </div>
+                    <div class="input_field">
+                      <input id="mail_input" type="text" value="aarav.mehta@exmple.com" name="email" required
+                        minlength="2" />
+                      <span id="emailError" class="error"></span>
+
+                    </div>
+                  </div>
+                  <div class="role">
+                    <div class="userbio_icon">
+                      <img src="assets/userbio.png" alt="User bio icon" />
+                    </div>
+                    <div class="textarea-div">
+                      <textarea id="autoTextarea" class="custom-textarea" type="text" cols="30"
+                        value="Learning frontend development with focus on HTML, CSS, and React." required
+                        minlength="10">Learning frontend development with focus on HTML, CSS, and React.</textarea>
+                      <span id="bioError" class="error"></span>
+
+                    </div>
+                  </div>
+                  <div class="role">
+                    <div>
+                      <img src="assets/location.png" alt="Location icon" />
+                    </div>
+                    <div class="input_field">
+                      <input id="location_input" type="text" value="Bangalore, India" required />
+                      <span id="locationError" class="error"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- script -->
+<script src="./script.js"></script>
